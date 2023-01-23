@@ -7,7 +7,7 @@ import Nav from "./Nav";
 
 
 function App() {
-  const dogsList = await getDogs();
+  const dogsList = getDogs();
   console.log(dogsList);
 
   return (
