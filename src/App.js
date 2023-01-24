@@ -23,6 +23,7 @@ function App() {
   }
 
   console.log({dogs});
+
   if (!isLoaded) {
     getDogs();
     return (
@@ -35,7 +36,7 @@ function App() {
         <Nav getDogs={ getDogs } dogs={ dogs } />
         <Routes>
           <Route element={<DogList dogs={ dogs } />} path="/" />
-          <Route element={<DogDetails />} path="/dogs/:name" />
+          <Route element={<DogDetails dogs={ dogs } />} path="/dogs/:name" />
         </Routes>
       </BrowserRouter>
     </div>
