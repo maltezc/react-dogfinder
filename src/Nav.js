@@ -1,7 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function Nav({ getDogs, dogs }) {
+// TODO: doc strings
+
+
+function Nav({ dogs }) {
   return (
     <nav className="Nav">
 

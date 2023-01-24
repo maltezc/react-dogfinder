@@ -1,6 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 
+// TODO: DOC STRINGS
 function DogDetails({ dogs }) {
   const { name } = useParams();
 

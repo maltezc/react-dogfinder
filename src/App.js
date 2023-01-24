@@ -2,7 +2,6 @@ import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import DogList from "./DogList";
 import DogDetails from "./DogDetails";
-import {getDogs} from "./helperDogs";
 import Nav from "./Nav";
 import { useState } from "react";
 import axios from "axios";
@@ -30,11 +29,12 @@ function App() {
       <h1>Loading...</h1>
     )
   }
+
   return (
     <div className="App">
       <BrowserRouter>
-        <Nav getDogs={ getDogs } dogs={ dogs } />
-        <Routes>
+        <Nav dogs={ dogs } />
+        <Routes> {/* could refactor to be its own route list.  */}
           <Route element={<DogList dogs={ dogs } />} path="/" />
           <Route element={<DogDetails dogs={ dogs } />} path="/dogs/:name" />
         </Routes>

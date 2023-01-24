@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+// TODO: DOC STRINGS
 function DogList({ dogs }) {
   return (
     <div>
