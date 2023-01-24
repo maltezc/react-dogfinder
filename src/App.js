@@ -8,7 +8,18 @@ import axios from "axios";
 
 const BASE_URL = "http://localhost:5001/dogs";
 
-
+/** App for displaying list of dogs
+ *
+ * Props:
+ * - None
+ *
+ * State:
+ * - dogs: array of dog objects
+ * - isLoaded: indicates whether API request to dogs API
+ *             has resolved
+ *
+ * App -> DogList
+ */
 function App() {
   const [dogs, setDogs] = useState(null);
   const [isLoaded, setIsLoaded] = useState(false);

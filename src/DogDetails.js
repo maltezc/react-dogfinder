@@ -1,7 +1,12 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 
-// TODO: DOC STRINGS
+/** Show display an individual dog
+ *
+ * Props: dogs (array of dog objects)
+ *
+ * DogList -> DogDetail
+ */
 function DogDetails({ dogs }) {
   const { name } = useParams();
 

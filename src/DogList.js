@@ -1,7 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-// TODO: DOC STRINGS
+/** Show display for list of dogs
+ *
+ * Props: dogs (array of dog objects)
+ *
+ * App -> DogList -> DogDetail
+ */
 function DogList({ dogs }) {
   return (
     <div>
