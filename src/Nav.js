@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function Nav({ dogsList }) {
+function Nav({ getDogs, dogs }) {
   return (
     <nav className="Nav">
 
-      {dogsList.map(dog => {
-        return (<Link to="/dog">
+      {dogs.map((dog, i) => {
+        return (<Link key={i} to="/dog">
         {dog.name}
       </Link>)
       })}
